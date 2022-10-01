@@ -22,6 +22,7 @@ Route::post('/login',[AuthController::class,'login']);
 // Private Routes
 Route::group(['middleware'=> ['auth:sanctum']], function() {
     Route::post('/logout', [AuthController::class,'logout']);
+    Route::post('/user', [AuthController::class,'user']);
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

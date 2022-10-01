@@ -29,7 +29,6 @@ class AuthController extends Controller
 
         return response()->json($response,201);
     }
-
     public function login(Request $request){
         $fields = $request->validate([
             'email'=>'required|string|email',
@@ -53,7 +52,9 @@ class AuthController extends Controller
         ];
         return response()->json($response,201);
     }
-
+    public function user(){
+        return Auth::user()->$user;
+    }
     public function logout(Request $request){
         auth()->user()->tokens()->delete();
         return [
