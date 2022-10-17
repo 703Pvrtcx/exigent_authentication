@@ -7,6 +7,9 @@ Full Stack Laravel Api with Vue.js Frontend
 -> git clone https://github.com/703Pvrtcx/exigent_authentication.git 
 
  *cd exigent_authentication
+
+* composer install
+
 * Start XAMMP
     Myphp Admin
         create new Database 'laravel'
