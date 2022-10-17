@@ -8,8 +8,6 @@ Full Stack Laravel Api with Vue.js Frontend
 
  *cd exigent_authentication
 
-* composer install
-
 * Start XAMMP
     Myphp Admin
         create new Database 'laravel'
@@ -22,6 +20,8 @@ Full Stack Laravel Api with Vue.js Frontend
 ```
 ### Run local development server
 ```
+composer install
+
 php artisan serve
 ```
 
